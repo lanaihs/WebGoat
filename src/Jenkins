@@ -1,4 +1,4 @@
-pipeline {
+freestyle {
     agent any
 
     stages {
@@ -10,7 +10,7 @@ pipeline {
         
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/lololis/WebGoat.git'
+                git url: 'https://github.com/lololis/WebGoat/tree/main/src.git'
             }
         }
         
