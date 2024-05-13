@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Fortify Remote Analysis') {
         steps {
-                fortifyRemoteAnalysis remoteAnalysisProjectType: fortifyPHP(),
+                fortifyRemoteAnalysis remoteAnalysisProjectType: fortifyjava(),
                 uploadSSC: [appName: 'coffee_shop', appVersion: 'v1']
                 }
             }
