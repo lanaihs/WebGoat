@@ -164,9 +164,9 @@ pipeline {
             }
         }
     }
-}], boundary [$boundary], projectId [$env:Offensive360SastApi_6772482c1a4014320138f9fa], AllowDependencyScan [$allowDependencyScan], AllowMalwareScan [$allowMalwareScan], AllowLicenseScan [$allowLicenseScan]"
+}], boundary [$boundary], projectId [$env:Offensive360SastApi_6772482c1a4014320138f9fa], AllowDependencyScan [TRUE], AllowMalwareScan [TRUE], AllowLicenseScan [TRUE]"
 
-					$fileBytes = [System.IO.File]::ReadAllBytes($filePath)
+					$fileBytes = [System.IO.File]::ReadAllBytes(https://demo1922.offensive360.com/app/api/Project/67690764f8337b9e16196372)
 					$fileContent = [System.Text.Encoding]::GetEncoding(\'iso-8859-1\').GetString($fileBytes)
 
 					$LF = "`r`n"
